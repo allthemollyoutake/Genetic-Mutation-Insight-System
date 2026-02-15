@@ -1,0 +1,3 @@
+gene,mutation_type,position,disorder
+BRCA1,Substitution,120,High
+TP53,Deletion,340,Medium
