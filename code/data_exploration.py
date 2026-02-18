@@ -19,8 +19,8 @@ def insertMutation():
   disorder = input("Enter Associated Disorder: ")
   sign = input("Enter Clinical Significance (Benign/Pathogenic/Uncertain): ")
   sign = sign.capitalize()
-  query = f"INSERT INTO MUTATION_DATA VALUES ('{mid}', '{gene}', '{mtype}', {posn}, '{disorder}', '{sign});"
-  cur.execute(query, values)
+  query = f"INSERT INTO MUTATION_DATA VALUES ('{mid}', '{gene}', '{mtype}', {posn}, '{disorder}', '{sign}');"
+  cur.execute(query)
   con.commit()
   print("Mutation Record Inserted Successfully!\n")
 
